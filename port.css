@@ -1,0 +1,258 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    
+  }
+
+  
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Header / Navigation */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav .logo h1 {
+    margin-left: 10px;
+    color: red;
+  }
+ 
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: red;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #f0bb78;
+    color: black;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .cta-btn {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 60px;
+    font-size: 1rem;
+    transition: background:0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #543a14;
+    color: white;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #A7D477;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background: #ecf0f1;
+    padding: 60px 20px;
+    background-color: #cdc1ff;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .skills-list li {
+    font-size: 1.2rem;
+    background-color: #9694ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .skills-list li:hover {
+    background-color: #001a6e;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 60px 20px;
+    background-color: #a294f9;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-card {
+    background: #cdc1ff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .project-card a {
+    color: #d14d72;
+    font-size: 1.2rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: #a59d84;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #contact-form button {
+    background: #fff;
+    color: red;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #3b3030;
+    color: black;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #22177a;
+    color: #fff;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+    }
+  
+    .project-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .cta-btn {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 1.8rem;
+   
+  
